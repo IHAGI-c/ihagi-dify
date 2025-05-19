@@ -5,8 +5,8 @@ services:
     #  - "2379"
     volumes:
       - ./config/pd.toml:/pd.toml:ro
-      - ./volumes/data:/data
-      - ./volumes/logs:/logs
+      - /mnt/data/dify-data/volumes/data:/data
+      - /mnt/data/dify-data/volumes/logs:/logs
     command:
       - --name=pd0
       - --client-urls=http://0.0.0.0:2379
@@ -21,8 +21,8 @@ services:
   tikv:
     image: pingcap/tikv:v8.5.1
     volumes:
-      - ./volumes/data:/data
-      - ./volumes/logs:/logs
+      - /mnt/data/dify-data/volumes/data:/data
+      - /mnt/data/dify-data/volumes/logs:/logs
     command:
       - --addr=0.0.0.0:20160
       - --advertise-addr=tikv:20160
@@ -38,7 +38,7 @@ services:
     # ports:
     #   - "4000:4000"
     volumes:
-      - ./volumes/logs:/logs
+      - /mnt/data/dify-data/volumes/logs:/logs
     command:
       - --advertise-address=tidb
       - --store=tikv
@@ -52,8 +52,8 @@ services:
     volumes:
       - ./config/tiflash.toml:/tiflash.toml:ro
       - ./config/tiflash-learner.toml:/tiflash-learner.toml:ro
-      - ./volumes/data:/data
-      - ./volumes/logs:/logs
+      - /mnt/data/dify-data/volumes/data:/data
+      - /mnt/data/dify-data/volumes/logs:/logs
     command:
       - --config=/tiflash.toml
     depends_on:
