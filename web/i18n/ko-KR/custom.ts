@@ -7,8 +7,8 @@ const translation = {
     title: '플랜을 업그레이드하세요',
   },
   webapp: {
-    title: 'web app 브랜드 사용자 정의',
-    removeBrand: 'Powered by Dify 삭제',
+    title: 'WebApp 브랜드 사용자 정의',
+    removeBrand: 'Powered by Haseom 삭제',
     changeLogo: 'Powered by 브랜드 이미지 변경',
     changeLogoTip: '최소 크기 40x40px의 SVG 또는 PNG 형식',
   },

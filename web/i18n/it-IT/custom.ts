@@ -7,8 +7,8 @@ const translation = {
     des: 'Aggiorna il tuo piano per personalizzare il tuo marchio',
   },
   webapp: {
-    title: 'Personalizza il marchio web app',
-    removeBrand: 'Rimuovi Powered by Dify',
+    title: 'Personalizza il marchio WebApp',
+    removeBrand: 'Rimuovi Powered by Haseom',
     changeLogo: 'Cambia immagine del marchio Powered by',
     changeLogoTip: 'Formato SVG o PNG con una dimensione minima di 40x40px',
   },

@@ -208,3 +208,9 @@ plugins.jsonl
 
 # mise
 mise.toml
+
+# volumes
+docker/volumes-*
+
+# docker-compose
+docker/docker-compose.yaml.*

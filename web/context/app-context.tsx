@@ -47,6 +47,9 @@ const initialWorkspaceInfo: ICurrentWorkspace = {
   created_at: 0,
   role: 'normal',
   providers: [],
+  custom_config: {
+    remove_webapp_brand: true,
+  },
 }
 
 const AppContext = createContext<AppContextValue>({

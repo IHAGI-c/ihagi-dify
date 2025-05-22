@@ -7,8 +7,8 @@ const translation = {
     des: 'Upgrade deinen Plan, um deine Marke anzupassen.',
   },
   webapp: {
-    title: 'web app Marke anpassen',
-    removeBrand: 'Entferne Powered by Dify',
+    title: 'WebApp Marke anpassen',
+    removeBrand: 'Entferne Powered by Haseom',
     changeLogo: 'Ändere Powered by Markenbild',
     changeLogoTip: 'SVG oder PNG Format mit einer Mindestgröße von 40x40px',
   },

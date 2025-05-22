@@ -7,8 +7,8 @@ const translation = {
     title: 'Upgradează-ți planul',
   },
   webapp: {
-    title: 'Personalizați marca web app',
-    removeBrand: 'Eliminați "Powered by Dify"',
+    title: 'Personalizați marca WebApp',
+    removeBrand: 'Eliminați "Powered by Haseom"',
     changeLogo: 'Schimbați imaginea mărcii "Powered by"',
     changeLogoTip: 'Format SVG sau PNG cu o dimensiune minimă de 40x40px',
   },

@@ -7,8 +7,8 @@ const translation = {
     suffix: '定制您的品牌。',
   },
   webapp: {
-    title: '定制 web app 品牌',
-    removeBrand: '移除 Powered by Dify',
+    title: '定制 WebApp 品牌',
+    removeBrand: '移除 Powered by Haseom',
     changeLogo: '更改 Powered by Brand 图片',
     changeLogoTip: 'SVG 或 PNG 格式，最小尺寸为 40x40px',
   },

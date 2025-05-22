@@ -437,7 +437,14 @@ const TextGeneration: FC<IMainProps> = ({
   }, [])
 
   // Can Use metadata(https://beta.nextjs.org/docs/api-reference/metadata) to set title. But it only works in server side client.
-  useDocumentTitle(siteInfo?.title || t('share.generation.title'))
+  useEffect(() => {
+    if (siteInfo?.title) {
+      if (canReplaceLogo)
+        document.title = `${siteInfo.title}`
+      else
+        document.title = `${siteInfo.title} - Powered by Haseom`
+    }
+  }, [siteInfo?.title, canReplaceLogo])
 
   useAppFavicon({
     enable: !isInstalledApp,
